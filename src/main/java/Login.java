@@ -10,7 +10,7 @@ public class Login extends HttpServlet{
 	public void doGet(HttpServletRequest req,HttpServletResponse res) throws IOException {
 		String uname=(String)req.getParameter("uname");
 		String password=(String)req.getParameter("password");
-		System.out.println(uname);
+		//System.out.println(uname);
 		if(uname.equals("siam")&&password.equals("abc")) {
 			HttpSession session=req.getSession();
 			session.setAttribute("username", uname);
